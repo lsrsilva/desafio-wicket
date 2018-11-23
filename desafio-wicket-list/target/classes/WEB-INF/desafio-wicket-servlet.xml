@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/mvc
+						http://www.springframework.org/schema/mvc/spring-mvc.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Caminho dos controllers -->
+	<context:component-scan	base-package="br.com.lucasilva.controller" />
+	
+	<!-- Bean responsável por ler a url do usuário e ligar com o controler para retornar a página -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<!-- Especificar qual classe que irá processsar a view que será retornada pelo Resolver -->
+		<property name="viewClass" value="org.springframework.web.servelet.view.JstlView"></property>
+		<!-- Caminho das Views e o sufixo dos arquivos -->
+		<property name="prefix" value="br.com.lucasilva.view"></property>
+		<property name="sufix" value=".html"></property>
+	</bean>
+
+</beans>

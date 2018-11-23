@@ -1,0 +1,13 @@
+package br.com.lucasilva.view.templates.panels;
+
+import org.apache.wicket.markup.html.panel.Panel;
+
+public class FooterPanel extends Panel {
+
+	private static final long serialVersionUID = -5457941011499707561L;
+
+	public FooterPanel(String id) {
+		super(id);		
+	}
+
+}

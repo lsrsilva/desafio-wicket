@@ -1,0 +1,101 @@
+a:link {
+	text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.feedback {
+	background-color: red;
+}
+
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: red;
+	text-align: center;
+}
+
+.margins {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+}
+
+.modal-item-center {
+	position: absolute;
+	bottom: 0;
+	left: 55%;
+}
+
+.my-form-control {
+	width: 100%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-login {
+	width: 100%;
+	font-size: 1rem;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	margin-bottom: 5px;
+	
+	border-style: none none solid none;
+}
+
+.my-form-group {
+	margin-bottom: 0px;
+}
+
+.red {
+	color: red;
+}
+
+#addUsers {
+	font-size: 18px;
+	color: white;
+	float: right;
+	margin: 78px 20px 10px 0;/*73px*/
+	background-color: green;
+	border: 5px green solid;
+	border-radius: 20px;
+}
+
+#btn-login{
+	margin-top:10px;
+	width: 100%;
+}
+
+#dataNasc.form-control {
+	margin-botton: 5px !important;
+}
+
+#label{
+	font-family: Andale Mono, monospace;
+	font-size: 40px;
+}
+
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

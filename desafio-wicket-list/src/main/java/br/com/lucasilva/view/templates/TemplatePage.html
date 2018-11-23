@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- Não é necessário o link para os outros arquivos js pois o pom do webjar do bootstrap já contem os arquivos como requeridos. ( arquivo do popper e do jquery) 
+		<script src="/webjars/jquery/3.0.0/jquery.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="/webjars/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		 -->
+		<script src="webjars/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="webjars/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		 
+		<link rel="stylesheet" href="./css/icons/css/all.css" /> <!-- ícones do fontawesome -->
+		<link rel="shortcut icon" href="./icon/logo.jpeg" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/estilo.css" type="text/css">
+
+	</head>
+	
+	<body>
+		<wicket:child/>
+		<div wicket:id="footer"></div>
+	</body>
+	
+</html>
