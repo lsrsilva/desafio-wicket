@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<wicket:head>
+		<meta charset="utf-8" />
+		<title>Desafio Wicket - Cadastro</title>
+		
+	</wicket:head>
+	
+	<body>
+		<wicket:extend>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+				<a wicket:id="homeLink" id="homeLink" class="navbar-brand" href=""><img src="./icon/logo.jpeg" width="50px" style="background-color: transparent;"></a>
+	
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCad">
+				    <span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarCad">
+					<div class="navbar-nav">
+						<a class="nav-item nav-link" wicket:id="cadLink">Cadastros</a>
+					</div>
+				</div>
+			</nav>
+			
+			<div>
+				<a wicket:id="addUsers" id="addUsers" class="fas fa-plus-circle"></a>
+				<div class="table-responsive">
+					<table wicket:id="container" class="table table-hover table-sm">
+						<tbody>
+							<tr class="tr" style="text-align: center;">
+								<th scope="col">Nome</th>
+								<th scope="col">Sobrenome</th>
+								<th scope="col">CPF</th>
+								<th scope="col">RG</th>
+								<th scope="col">Telefone</th>
+								<th scope="col">Data de Nascimento</th>
+								<th scope="col">E-mail</th>
+								<th scope="col">Termos</th>
+								<th scope="col">Sexo</th>
+								<th scope="col">Observações</th>
+								<th scope="col" colspan="2">Ações</th>
+							</tr>
+							<tr wicket:id="listView" class="table-bordered">
+								<td wicket:id="nome"></td>
+								<td wicket:id="sbnm"></td>
+								<td wicket:id="cpf"></td>
+								<td wicket:id="rg"></td>
+								<td wicket:id="telefone"></td>
+								<td wicket:id="dataNasc"></td>
+								<td wicket:id="email"></td>
+								<td wicket:id="termos"></td>
+								<td wicket:id="sexo"></td>
+								<td wicket:id="obs"></td>
+								<td style="border-right: none;"><a wicket:id="edit" class="fas fa-edit" style="background-color: transparent; border: none; color: blue;"></a></td>
+								<td style="border-left: none;"><a wicket:id="remove" class="fas fa-trash-alt" style="background-color: transparent; border: none; color: red;"></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<div wicket:id="cadModal" ></div>
+			
+			<div wicket:id="excluirMod"></div>
+		</wicket:extend>
+	</body>
+</html>

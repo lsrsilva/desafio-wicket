@@ -1,0 +1,87 @@
+<wicket:link>
+	<link rel="stylesheet" href="../css/estilo.css" type="text/css">
+</wicket:link>
+
+<wicket:panel>
+
+		<div wicket:id="feedback" style="color: red;"></div>
+		
+		<form wicket:id="cadForm" class="form-horizontal col-md-12 needs-validation">
+
+			<div class="form-row">
+				<div class="my-form-group col-sm-6">
+					<label wicket:for="nome" class="control-label col-sm-6">Primeiro nome:</label>
+					<input class="form-control margins" wicket:id="nome" type="text" autofocus required>
+				</div>
+
+				<div class="my-form-group col-sm-6">
+					<label wicket:for="sbnm" class="control-label col-sm-6">Segundo nome:</label>
+					<input class="form-control margins" wicket:id="sbnm" type="text"><br />
+				</div>
+
+				<div class="my-form-group col-md-6 mgtop">
+					<label wicket:for="cpf" class="control-label col-sm-6">CPF:</label>
+					<input class="form-control margins" wicket:id="cpf" type="number" maxlength="14"><br />
+				</div>
+
+				<div class="my-form-group col-md-6 mgtop">
+					<label wicket:for="rg" class="control-label col-sm-6">RG:</label>
+					<input class="form-control margins" wicket:id="rg" type="number"><br />
+				</div> 
+
+				<div class="my-form-group col-md-6">
+					<label wicket:for="email" class="control-label col-sm-6">E-mail</label>
+					<input class="form-control margins" wicket:id="email" type="email"><br />
+				</div>
+	
+				<div class="my-form-group col-md-6">
+					<label wicket:for="senha" class="control-label col-sm-6">Senha</label>
+					<input class="form-control margins" wicket:id="senha" type="password"><br />
+				</div>
+	
+				<div class="my-form-group col-md-3">
+					<label wicket:for="endereco.rua" class="control-label col-sm-6">Rua:</label>
+					<input class="form-control margins" wicket:id="endereco.rua" type="text"><br />
+				</div>
+				
+				<div class="my-form-group col-md-3">
+					<label wicket:for="endereco.cep" class="control-label col-sm-6">CEP:</label>
+					<input class="form-control margins" wicket:id="endereco.cep" type="text"><br />
+				</div>
+				
+				
+				<div class="my-form-group col-md-3">
+					<label wicket:for="telefone" class="control-label col-sm-6">Telefone:</label>
+					<input class="form-control margins" wicket:id="telefone" type="number" placeholder="(XX) XXXX-XXXX"><br />
+				</div>
+	
+				<div class="my-form-group col-md-3">
+					<label wicket:for="dataNasc" class="control-label col-md-7">Data de Nascimento</label>
+					<input class="my-form-control margins col-md-5" wicket:id="dataNasc" type="text" placeholder="01/01/00" autocomplete="off"> <br />
+				</div>
+			
+				<div class="my-form-group" style="margin: 3px 0px 10px 10px;">
+					<!-- Não é necessário o atributo value nos inputs -->
+					<label class="control-label" wicket:id="lbSx"></label>
+					<br>
+					<div wicket:id="sexo">
+						<input class="form-control custom-control-input col-md-3" type="radio">
+					</div>
+				</div>
+				<br>
+				
+				<div class="my-form-group col-md-12">
+					<label wicket:for="obs" class="control-label">Observações</label>
+					<textarea class="form-control margins col-md-12" wicket:id="obs" rows="2" style="margin-left: 10px;"></textarea>	
+				</div>
+				
+				<div class="col-md-6">
+					<label wicket:for="termos" class="control-label pdleft">ACEITA ESTE DESAFIO?</label>
+					<input class="form=control" wicket:id="termos" type="checkbox"><br />
+				</div>
+			</div>
+			
+			<input wicket:id="salvar" class="btn btn-success" type="submit" style="margin: 3px 0px 10px 10px;" value="Salvar"><br/>
+		</form>
+
+</wicket:panel>

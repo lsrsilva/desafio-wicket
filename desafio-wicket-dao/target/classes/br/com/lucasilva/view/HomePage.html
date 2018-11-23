@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<wicket:head>
+		<meta charset="UTF-8">
+		<title>Home Page</title>
+	</wicket:head>
+	<body>
+	
+		<wicket:extend>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a wicket:id="homeLink" id="homeLink" class="navbar-brand" href=""><img src="./icon/logo.jpeg" width="50px" style="background-color: transparent;"></a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCad">
+				    <span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarCad">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" wicket:id="linkCad">Cadastros</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" wicket:id="linkLogin">Login</a>
+						</li>
+						
+					</ul>
+					
+					<!-- 
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Teste</a>
+							
+							<div class="dropdown-menu">
+								<a class="dropdown-item">Login</a>
+								<a class="dropdown-item">Teste2</a>
+							</div>
+						</li>
+					</ul>
+					 -->
+				</div>
+			</nav>
+			<br/><br/>
+			
+			<form wicket:id="form" class="container" style="padding-left: 35%;">
+				<input wicket:id="textField" type="text" placeholder="Bipolaridade">
+				<input class="btn btn-success" wicket:id="esconde" type="submit" value="Mostre-me (*-*)"><br /><br />
+			</form>
+			
+		</wicket:extend>
+	</body>
+</html>
