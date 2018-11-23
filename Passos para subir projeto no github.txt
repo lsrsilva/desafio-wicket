@@ -1,0 +1,5 @@
+git init
+git add nome_pasta_ou_arquivo_subir
+git commit -m "comentário do commit"
+git remot add origin https://link.repositorio/user/projeto.git
+git push -u origin master
